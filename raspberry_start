@@ -1,0 +1,18 @@
+//开机自启动命令
+sudo vim start.sh
+
+//脚本内容
+#!/bin/sh
+cd /home/pi/test
+sudo ./ledtest
+
+//修改文件权限
+sudo chmod 777 /hone/pi/test/start.sh
+
+//将脚本文件添加进rc.local
+sudo vim /etc/rc.local
+
+//在进到该文件中之后，找到exit 0的上一行，写入如下程序代码
+/home/pi/test/start.sh start
+
+重启即可

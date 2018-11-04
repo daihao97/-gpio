@@ -9,3 +9,6 @@ cd wiringPi
 #gpio查看
 gpio -v
 gpio readall
+
+
+gcc -Wall -o LEDtest LEDtest.c   -lwiringPi          //使用C语言编程

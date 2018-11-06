@@ -1,0 +1,7 @@
+//删除自带的vi
+sudo apt-get remove vi
+
+//安装vim
+sudo apt-get install vim
+
+//配置/etc/vim/vimrc 文件

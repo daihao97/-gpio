@@ -6,8 +6,8 @@ sudo vim start.sh
 cd /home/pi/test
 sudo ./ledtest
 
-//修改文件权限
-sudo chmod 777 /hone/pi/test/start.sh
+//修改文件权限m
+sudo chmod 777 /home/pi/test/start.sh
 
 //将脚本文件添加进rc.local
 sudo vim /etc/rc.local
